@@ -1,0 +1,3264 @@
+{
+	"info": {
+		"_postman_id": "2dd00fdc-3004-44a4-ac02-0e3596c88155",
+		"name": "dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MP",
+			"item": [
+				{
+					"name": "mp/commodity/abstractword/list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    //\"shopCateLeafId\": 30\n    \"pid\": 0\n    //\"pathPid\": 2\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/commodity/abstractword/list",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"commodity",
+								"abstractword",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/commodity/abstractword/query",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"美\",\n    \"leaf\": 1\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/commodity/abstractword/query",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"commodity",
+								"abstractword",
+								"query"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/sp/usershop/list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"shopId\": 247\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/sp/usershop/list",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"sp",
+								"usershop",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/shop/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"shopName\": \"寿森超时\",\n    \"shopAddress\": \"河北省廊坊市大厂回族自治县滨河大道11号\",\n    \"shopTel\": \"0531-88899989\",\n    \"shopBusinessTime1\": \"08:30-21:30\",\n    \"shopCateLeafId\": 53,\n    \"shopInfo\": \"综合超市\",\n    \"shopLat\": 39.889815,\n    \"shopLng\": 116.841221,\n    \"shopLogoUrl\": \"http://image05.71.net/image05/16/21/52/67/9d0d1574-1d69-4ba1-b738-e39cf7bb8791_200.jpg\",\n    \"adCode\": \"\",\n    \"cityCode\": \"\",\n    \"shopHeadTel\": \"18812349876\"\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/shop/create",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"shop",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/shop/allShopStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/shop/allShopStatus",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"shop",
+								"allShopStatus"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/commodity/allCommodityStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/commodity/allCommodityStatus",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"commodity",
+								"allCommodityStatus"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/commodity/abstractword/relationship/list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"abstractWordId\": 30\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/commodity/abstractword/relationship/list",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"commodity",
+								"abstractword",
+								"relationship",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/commodity/abstractword/relationship/save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"abstractWordId\": 44,\n    \"abstractWordIdList\": [45,46]\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/commodity/abstractword/relationship/save",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"commodity",
+								"abstractword",
+								"relationship",
+								"save"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/sp/usershop/update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 139,\n    \"userLoginId\": 28\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/sp/usershop/update",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"sp",
+								"usershop",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/shop/extra/owner/manager",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 32768\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/shop/extra/owner/manager",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"shop",
+								"extra",
+								"owner",
+								"manager"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mp/shop/extra/owner/self",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 32768\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/mp/shop/extra/owner/self",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"mp",
+								"shop",
+								"extra",
+								"owner",
+								"self"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SP",
+			"item": [
+				{
+					"name": "sp/discount/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"value": "12",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/discount/create",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"discount",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "sp/user/info",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userLoginId",
+								"type": "text",
+								"value": "12",
+								"disabled": true
+							},
+							{
+								"key": "Referer",
+								"value": "api.jicu.vip",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userLoginId\": 12\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/user/info",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"user",
+								"info"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "sp/shop/cate/all",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "4038481bb2ba66e3225ccbdeee8e34d4"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userLoginId",
+								"type": "text",
+								"value": "12",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/shop/cate/all",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"shop",
+								"cate",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "sp/commodity/abstractword/list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    //\"shopCateLeafId\": 30\n    //\"pid\": 2\n    \"pathPid\": 2\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/commodity/abstractword/list",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"commodity",
+								"abstractword",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "sp/commodity/abstractword/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"水果刀\",\n    \"shopCateLeafId\": 30,\n    \"pid\": 13\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/commodity/abstractword/create",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"commodity",
+								"abstractword",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "sp/commodity/abstractword/update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"刀具\",\n    \"id\": 13\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/commodity/abstractword/update",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"commodity",
+								"abstractword",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "sp/commodity/abstractword/delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 23\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/commodity/abstractword/delete",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"commodity",
+								"abstractword",
+								"delete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "sp/commodity/abstractword/move",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 24,\n    \"pid\": 13\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/commodity/abstractword/move",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"commodity",
+								"abstractword",
+								"move"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "sp/shop/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Token",
+								"type": "text",
+								"value": "7f3c51cb280078714327fcd42b8c1550"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-userLoginId",
+								"type": "text",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"shopName\": \"寿森超时\",\n    \"shopAddress\": \"河北省廊坊市大厂回族自治县滨河大道11号\",\n    \"shopTel\": \"0531-88899989\",\n    \"shopBusinessTime1\": \"08:30-21:30\",\n    \"shopCateLeafId\": 53,\n    \"shopInfo\": \"综合超市\",\n    \"shopLat\": 39.889815,\n    \"shopLng\": 116.841221,\n    \"shopLogoUrl\": \"http://image05.71.net/image05/16/21/52/67/9d0d1574-1d69-4ba1-b738-e39cf7bb8791_200.jpg\",\n    \"adCode\": \"\",\n    \"cityCode\": \"\",\n    \"shopHeadTel\": \"18812349876\",\n    \"idcardFrontImgUrl\": \"http://static.jicu.vip/shop/no_extra.jpg\",\n    \"idcardBackImgUrl\": \"http://static.jicu.vip/shop/no_extra.jpg\",\n    \"idcardHandImgUrl\": \"http://static.jicu.vip/shop/no_extra.jpg\",\n    \"shopInsideImgUrl\": \"http://static.jicu.vip/shop/no_extra.jpg\",\n    \"shopOutsideImgUrl\": \"http://static.jicu.vip/shop/no_extra.jpg\",\n    \"businessLicenseImgUrl\": \"http://static.jicu.vip/shop/no_extra.jpg\"\n}"
+						},
+						"url": {
+							"raw": "http://api.jicu.vip/sp/shop/create",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"sp",
+								"shop",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sp/discount/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-userLoginId",
+										"value": "12",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 319,\n    \"commodityName\": \"大黑肘子\",\n    \"commodityPrice\": 8.8,\n    \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n    \"commodityCate\": \"others\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/sp/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"sp",
+										"discount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Mar 2019 03:35:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"discountBo\": {\n            \"adCode\": \"110105\",\n            \"cityCode\": \"010\",\n            \"commodityCate\": \"others\",\n            \"commodityId\": 319,\n            \"commodityName\": \"大肘子\",\n            \"commodityPrice\": 8.8,\n            \"id\": 382,\n            \"limitTimeExpire\": \"2019-03-18 20:00:00\",\n            \"shopLat\": 39.915833,\n            \"shopLng\": 116.512589,\n            \"shopPosition\": \"北京市北京市朝阳区八里庄村陈家林9号院5号楼一层106室\",\n            \"userLoginId\": 12\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "APP",
+			"item": [
+				{
+					"name": "commodity",
+					"item": [
+						{
+							"name": "commodity/detail",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "71b0c902f4f37045beda09c7e3c0ad68"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commodityId\": 66\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/commodity/detail",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"commodity",
+										"detail"
+									],
+									"query": [
+										{
+											"key": "shopId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userLoginId",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "commodity/queryRelationCommodity",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "71b0c902f4f37045beda09c7e3c0ad68"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"clientLng\": 39.138473,\n    \"clientLat\": 22.482399,\n    \"commodityId\": 28180\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/commodity/queryRelationCommodity",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"commodity",
+										"queryRelationCommodity"
+									],
+									"query": [
+										{
+											"key": "shopId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userLoginId",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "shop",
+					"item": [
+						{
+							"name": "shop/detail",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "71b0c902f4f37045beda09c7e3c0ad68",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"userLoginId\":5, \"shopId\":4}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/shop/detail",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"shop",
+										"detail"
+									],
+									"query": [
+										{
+											"key": "shopId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userLoginId",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shop/query",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "71b0c902f4f37045beda09c7e3c0ad68"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 5,\n    \"keywords\": \"圆珠\",\n    \"clientLng\": 39.138473,\n    \"clientLat\": 22.482399,\n    \"cityCode\": \"010\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/shop/query",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"shop",
+										"query"
+									],
+									"query": [
+										{
+											"key": "shopId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userLoginId",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shop/user/follows",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "71b0c902f4f37045beda09c7e3c0ad68",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"userLoginId\":5}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/shop/user/follows",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"shop",
+										"user",
+										"follows"
+									],
+									"query": [
+										{
+											"key": "shopId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userLoginId",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shop/follow/cancel",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "71b0c902f4f37045beda09c7e3c0ad68",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"userLoginId\":5, \"shopId\":3}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/shop/follow/cancel",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"shop",
+										"follow",
+										"cancel"
+									],
+									"query": [
+										{
+											"key": "shopId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userLoginId",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shop/follow",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "71b0c902f4f37045beda09c7e3c0ad68",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"userLoginId\":5, \"shopId\":4}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/shop/follow",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"shop",
+										"follow"
+									],
+									"query": [
+										{
+											"key": "shopId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userLoginId",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "user/profile/address/update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 12,\n    \"addressName\": \"高楼金第10号楼\",\n    \"addressLongitude\": 116.688680,\n    \"addressLatitude\": 39.863669\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/profile/address/update",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"profile",
+										"address",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/feedback/list",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 12\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/feedback/list",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"feedback",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/feedback/typeMap",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 12\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/feedback/typeMap",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"feedback",
+										"typeMap"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/feedback/get",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 12,\n    \"id\": 2\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/feedback/get",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"feedback",
+										"get"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/feedback/add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 12,\n    \"feedbackOsType\": 1,\n    \"feedbackType\": 3,\n    \"feedbackAppVersion\": \"1.0.0\",\n    \"feedbackContent\": \"我不想说\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/feedback/add",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"feedback",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/address/list",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 12\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/address/list",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"address",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/address/create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 12,\n    \"addressName\": \"北京市第四中学\",\n    \"addressLongitude\": 116.378176,\n    \"addressLatitude\": 39.931482,\n    \"addressTag\": \"school\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/address/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"address",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/address/update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 5,\n    \"userLoginId\": 12,\n    \"addressName\": \"北京市第四中学\",\n    \"addressLongitude\": 116.378176,\n    \"addressLatitude\": 39.931482,\n    \"addressTag\": \"\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/address/update",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"address",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/address/delete",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "7f3c51cb280078714327fcd42b8c1550"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\": 6,\n    \"userLoginId\": 12\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/address/delete",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"address",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user/signin",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginName\": \"13439828899\",\n    \"userLoginPassword\": \"12345678\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/user/signin",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"user",
+										"signin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "discount",
+					"item": [
+						{
+							"name": "discount/create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "7f3c51cb280078714327fcd42b8c1550",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userLoginId\": 12,\n    \"commodityName\": \"充电宝\",\n    \"commodityPrice\": 99,\n    \"clientLng\": 119.918383,\n    \"clientLat\": 39.843749,\n    \"expireDays\": 7,\n    \"commodityCate\": \"others\",\n    \"shopPosition\": \"北京市通州区\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"discount",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "discount/create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "71b0c902f4f37045beda09c7e3c0ad68",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"userLoginId\":5}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/discount/create",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"discount",
+										"create"
+									],
+									"query": [
+										{
+											"key": "shopId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userLoginId",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "amap",
+					"item": [
+						{
+							"name": "amap/convert",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"locationList\": [\n        \"116.688680,39.863669\",\n        \"116.686304,39.870765\"\n    ]\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/amap/convert",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"amap",
+										"convert"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "amap/regeo",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"location\": \"116.688675,39.863670\",\n    \"extensions\": \"all\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/amap/regeo",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"amap",
+										"regeo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "amap/geo",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"北京市通州区台湖镇定海园小区二里15号楼2-3层\"\n}"
+								},
+								"url": {
+									"raw": "http://api.jicu.vip/amap/geo",
+									"protocol": "http",
+									"host": [
+										"api",
+										"jicu",
+										"vip"
+									],
+									"path": [
+										"amap",
+										"geo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "WWW",
+			"item": [
+				{
+					"name": "land/android/download",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.jicu.vip/land/android/download",
+							"protocol": "http",
+							"host": [
+								"api",
+								"jicu",
+								"vip"
+							],
+							"path": [
+								"land",
+								"android",
+								"download"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

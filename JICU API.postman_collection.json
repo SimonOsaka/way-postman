@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "509543c9-dd34-4168-a9ea-48ec1a775c45",
+		"name": "JICU API",
+		"description": "急促项目的服务接口。包括：商家平台、管理平台、h5、iOS和Android。",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "app/article",
+			"item": [
+				{
+					"name": "获取文章列表",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/app/article?keywords=<string>&page=1&pageSize=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"app",
+								"article"
+							],
+							"query": [
+								{
+									"key": "keywords",
+									"value": "<string>",
+									"description": "查询文章关键词"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "(Required) 页码"
+								},
+								{
+									"key": "pageSize",
+									"value": "10",
+									"description": "(Required) 每页数据量"
+								}
+							]
+						},
+						"description": "获取文章列表"
+					},
+					"response": [
+						{
+							"name": "未知异常",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/app/article?keywords=<string>&page=1&pageSize=10",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"article"
+									],
+									"query": [
+										{
+											"key": "keywords",
+											"value": "<string>"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"code\": \"<integer>\",\n \"type\": \"<string>\",\n \"message\": \"<string>\"\n}"
+						},
+						{
+							"name": "文章列表",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/app/article?keywords=<string>&page=1&pageSize=10",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"article"
+									],
+									"query": [
+										{
+											"key": "keywords",
+											"value": "<string>"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"total\": \"<integer>\",\n \"items\": [\n  {\n   \"postId\": \"<long>\",\n   \"commodityId\": \"<long>\",\n   \"commodityName\": \"<string>\",\n   \"commodityImage\": \"<string>\",\n   \"subject\": \"<string>\",\n   \"postContent\": \"<string>\",\n   \"publishTime\": \"<date>\",\n   \"postStatus\": \"<integer>\",\n   \"preAction\": \"<integer>\"\n  },\n  {\n   \"postId\": \"<long>\",\n   \"commodityId\": \"<long>\",\n   \"commodityName\": \"<string>\",\n   \"commodityImage\": \"<string>\",\n   \"subject\": \"<string>\",\n   \"postContent\": \"<string>\",\n   \"publishTime\": \"<date>\",\n   \"postStatus\": \"<integer>\",\n   \"preAction\": \"<integer>\"\n  }\n ]\n}"
+						}
+					]
+				},
+				{
+					"name": "获取指定{postId}文章内容",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "<string>",
+								"description": "(Required) 用户token"
+							},
+							{
+								"key": "userLoginId",
+								"value": "<long>",
+								"description": "用户id"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/app/article/:postId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"app",
+								"article",
+								":postId"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "<long>",
+									"type": "string",
+									"description": "(Required) 文章id"
+								}
+							]
+						},
+						"description": "获取指定{postId}文章内容"
+					},
+					"response": [
+						{
+							"name": "返回文章内容",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/app/article/:postId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"article",
+										":postId"
+									],
+									"variable": [
+										{
+											"key": "postId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"postId\": \"<long>\",\n \"commodityId\": \"<long>\",\n \"commodityName\": \"<string>\",\n \"commodityImage\": \"<string>\",\n \"subject\": \"<string>\",\n \"postContent\": \"<string>\",\n \"publishTime\": \"<date>\",\n \"postStatus\": \"<integer>\",\n \"preAction\": \"<integer>\"\n}"
+						},
+						{
+							"name": "文章不存在",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/app/article/:postId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"article",
+										":postId"
+									],
+									"variable": [
+										{
+											"key": "postId"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "未知异常",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "<string>",
+										"description": "(Required) 用户token"
+									},
+									{
+										"key": "userLoginId",
+										"value": "<long>",
+										"description": "用户id"
+									},
+									{
+										"key": "token",
+										"value": "<string>",
+										"description": "(Required) 用户token"
+									},
+									{
+										"key": "userLoginId",
+										"value": "<long>",
+										"description": "用户id"
+									},
+									{
+										"key": "token",
+										"value": "<string>",
+										"description": "(Required) 用户token"
+									},
+									{
+										"key": "userLoginId",
+										"value": "<long>",
+										"description": "用户id"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/app/article/:postId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"article",
+										":postId"
+									],
+									"variable": [
+										{
+											"key": "postId"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.jicu.vip",
+			"type": "string"
+		}
+	]
+}
